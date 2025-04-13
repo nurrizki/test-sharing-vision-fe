@@ -1,0 +1,38 @@
+<div class="modal fade" id="editModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Article</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="editId">
+          <div class="mb-3">
+            <label>Title</label>
+            <input type="text" class="form-control" id="editTitle">
+          </div>
+          <div class="mb-3">
+            <label>Content</label>
+            <textarea class="form-control" id="editContent"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Category</label>
+            <input type="text" class="form-control" id="editCategory">
+          </div>
+          <div class="mb-3">
+            <label>Status</label>
+            <select class="form-control" id="editStatus">
+              <option>Publish</option>
+              <option>Draft</option>
+              <option>Thrash</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="updateArticle()">Update</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

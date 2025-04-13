@@ -1,0 +1,38 @@
+<div class="modal fade" id="modalSubmit" tabindex="-1" aria-labelledby="insertModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="insertArticleForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="insertModalLabel">Tambah Artikel Baru</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="title" class="form-label">Judul</label>
+              <input type="text" class="form-control" id="txt-title" name="title" required minlength="20">
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Kategori</label>
+              <input type="text" class="form-control" id="txt-category" name="category" required minlength="3">
+            </div>
+            <div class="mb-3">
+              <label for="content" class="form-label">Konten</label>
+              <textarea class="form-control" id="txt-content" name="content" rows="5" required minlength="200"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="status" class="form-label">Status</label>
+              <select class="form-select" id="opt-status" name="status" required>
+                <option value="Publish">Publish</option>
+                <option value="Draft">Draft</option>
+                <option value="Thrash">Thrash</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="insertArticle(event)"><i class="fas fa-save"></i> Save</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
