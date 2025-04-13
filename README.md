@@ -1,4 +1,4 @@
-# 🧠 Test Sharing Vision BE
+# 📰 Test Sharing Vision FE
 
 Frontend aplikasi sederhana untuk mengelola data artikel (Create, Read, Update, Delete) menggunakan DataTables dan Bootstrap, terhubung ke Backend API berbasis Go (Gin).
 
